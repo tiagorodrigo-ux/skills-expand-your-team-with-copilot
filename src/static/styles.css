@@ -723,3 +723,119 @@ footer {
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Difficulty badge on activity cards */
+.difficulty-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.difficulty-beginner {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.difficulty-intermediate {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.difficulty-advanced {
+  background-color: #fce4ec;
+  color: #c62828;
+}
+
+/* Difficulty filter buttons */
+.difficulty-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.difficulty-filter {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-filter.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary-dark);
+}
+
+.difficulty-filter:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  margin-right: 8px;
+}
+
+/* =====================
+   Dark Mode Styles
+   ===================== */
+body.dark-mode {
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --border: #333333;
+  --border-light: #2a2a2a;
+  --border-focus: #444444;
+  --primary: #3949ab;
+  --primary-light: #5c6bc0;
+  --primary-dark: #1a237e;
+  --secondary: #ff8f00;
+  --secondary-dark: #e65100;
+}
+
+body.dark-mode .activity-tag {
+  opacity: 0.9;
+}
+
+body.dark-mode .difficulty-beginner {
+  background-color: #1b5e20;
+  color: #a5d6a7;
+}
+
+body.dark-mode .difficulty-intermediate {
+  background-color: #e65100;
+  color: #ffe0b2;
+}
+
+body.dark-mode .difficulty-advanced {
+  background-color: #7f0000;
+  color: #ef9a9a;
+}
+
+body.dark-mode .search-box input {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+body.dark-mode .modal-content {
+  background-color: #2a2a2a;
+  border-color: var(--border);
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #2a2a2a;
+  color: var(--text-primary);
+  border-color: var(--border);
+}
